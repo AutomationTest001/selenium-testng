@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Smoke test for Login"  verbose="2"  parallel="tests" thread-count="10">
+
+
+	<test name="MutualLogin">
+		<classes>
+			<class name="com.selenium.testng.MutualLogin" />
+		</classes>
+	</test> <!-- TestSuite -->
+	
+	
+
+	
+</suite> <!-- Suite -->

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Test Case Passed : fd_10000]]>
+    </line>
+    <line>
+      <![CDATA[Test Case Passed : fd_40000]]>
+    </line>
+    <line>
+      <![CDATA[Test Case Passed : addOperation]]>
+    </line>
+    <line>
+      <![CDATA[Test Case Passed : subOperation]]>
+    </line>
+    <line>
+      <![CDATA[Test Case Passed : divOperation]]>
+    </line>
+    <line>
+      <![CDATA[Test Case Passed : mulOperation]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2021-07-11T11:38:21 IST" name="Smoke" finished-at="2021-07-11T11:38:58 IST" duration-ms="37668">
+    <groups>
+      <group name="Calculator_Test">
+        <method signature="Calculator_Test.addOperation()[pri:0, instance:com.selenium.pageobject_test.Calculator_Test@ba54932]" name="addOperation" class="com.selenium.pageobject_test.Calculator_Test"/>
+        <method signature="Calculator_Test.divOperation()[pri:2, instance:com.selenium.pageobject_test.Calculator_Test@ba54932]" name="divOperation" class="com.selenium.pageobject_test.Calculator_Test"/>
+        <method signature="Calculator_Test.mulOperation()[pri:3, instance:com.selenium.pageobject_test.Calculator_Test@ba54932]" name="mulOperation" class="com.selenium.pageobject_test.Calculator_Test"/>
+        <method signature="Calculator_Test.subOperation()[pri:1, instance:com.selenium.pageobject_test.Calculator_Test@ba54932]" name="subOperation" class="com.selenium.pageobject_test.Calculator_Test"/>
+      </group> <!-- Calculator_Test -->
+      <group name="Fixed Deposit">
+        <method signature="FixedDeposit_Test.fd_10000()[pri:0, instance:com.selenium.pageobject_test.FixedDeposit_Test@4e3958e7]" name="fd_10000" class="com.selenium.pageobject_test.FixedDeposit_Test"/>
+        <method signature="FixedDeposit_Test.fd_40000()[pri:1, instance:com.selenium.pageobject_test.FixedDeposit_Test@4e3958e7]" name="fd_40000" class="com.selenium.pageobject_test.FixedDeposit_Test"/>
+      </group> <!-- Fixed Deposit -->
+    </groups>
+    <test started-at="2021-07-11T11:38:21 IST" name="Fixed Deposit" finished-at="2021-07-11T11:38:40 IST" duration-ms="19208">
+      <class name="com.selenium.pageobject_test.FixedDeposit_Test">
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:com.selenium.pageobject_test.FixedDeposit_Test@4e3958e7]" started-at="2021-07-11T11:38:21 IST" name="preCondition" finished-at="2021-07-11T11:38:24 IST" duration-ms="3211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="fd_10000()[pri:0, instance:com.selenium.pageobject_test.FixedDeposit_Test@4e3958e7]" started-at="2021-07-11T11:38:24 IST" name="fd_10000" description="Test case to verify fixed deposit for &#039;100000&#039;" finished-at="2021-07-11T11:38:34 IST" duration-ms="9635" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test Case Passed : fd_10000]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- fd_10000 -->
+        <test-method signature="fd_40000()[pri:1, instance:com.selenium.pageobject_test.FixedDeposit_Test@4e3958e7]" started-at="2021-07-11T11:38:34 IST" name="fd_40000" description="Test case to verify fixed deposit for &#039;400000&#039;" finished-at="2021-07-11T11:38:39 IST" duration-ms="4791" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test Case Passed : fd_40000]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- fd_40000 -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:com.selenium.pageobject_test.FixedDeposit_Test@4e3958e7]" started-at="2021-07-11T11:38:39 IST" name="postCondition" finished-at="2021-07-11T11:38:40 IST" duration-ms="1025" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- com.selenium.pageobject_test.FixedDeposit_Test -->
+    </test> <!-- Fixed Deposit -->
+    <test started-at="2021-07-11T11:38:40 IST" name="Calculator" finished-at="2021-07-11T11:38:58 IST" duration-ms="18425">
+      <class name="com.selenium.pageobject_test.Calculator_Test">
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:com.selenium.pageobject_test.Calculator_Test@ba54932]" started-at="2021-07-11T11:38:40 IST" name="preCondition" finished-at="2021-07-11T11:38:42 IST" duration-ms="2088" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="addOperation()[pri:0, instance:com.selenium.pageobject_test.Calculator_Test@ba54932]" started-at="2021-07-11T11:38:42 IST" name="addOperation" description="verify addition operation" finished-at="2021-07-11T11:38:47 IST" duration-ms="4575" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test Case Passed : addOperation]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addOperation -->
+        <test-method signature="subOperation()[pri:1, instance:com.selenium.pageobject_test.Calculator_Test@ba54932]" started-at="2021-07-11T11:38:47 IST" name="subOperation" description="verify subtraction operation" finished-at="2021-07-11T11:38:50 IST" duration-ms="3465" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test Case Passed : subOperation]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- subOperation -->
+        <test-method signature="divOperation()[pri:2, instance:com.selenium.pageobject_test.Calculator_Test@ba54932]" started-at="2021-07-11T11:38:50 IST" name="divOperation" description="verify division operation" finished-at="2021-07-11T11:38:54 IST" duration-ms="3556" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test Case Passed : divOperation]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- divOperation -->
+        <test-method signature="mulOperation()[pri:3, instance:com.selenium.pageobject_test.Calculator_Test@ba54932]" started-at="2021-07-11T11:38:54 IST" name="mulOperation" description="verify multiplication operation" finished-at="2021-07-11T11:38:57 IST" duration-ms="3436" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test Case Passed : mulOperation]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- mulOperation -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:com.selenium.pageobject_test.Calculator_Test@ba54932]" started-at="2021-07-11T11:38:57 IST" name="postCondition" finished-at="2021-07-11T11:38:58 IST" duration-ms="865" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- com.selenium.pageobject_test.Calculator_Test -->
+    </test> <!-- Calculator -->
+  </suite> <!-- Smoke -->
+</testng-results>
