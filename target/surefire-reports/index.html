@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Smoke" class="navigator-link">
-              <span class="suite-name border-passed">Smoke</span>
+              <span class="suite-name border-failed">Smoke</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Smoke" class="navigator-link ">
-                    <span>C:\Users\SAKSOFT099\3D Objects\automation-selenium\SuiteFile\testng_pageobject.xml</span>
+                    <span>C:\Users\SAKSOFT099\3D Objects\selenium-testng\SuiteFile\testng_pageobject.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">6 methods, 2 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Smoke" class="hide-methods failed suite-Smoke"> (hide)</a> <!-- hide-methods failed suite-Smoke -->
+                      <a href="#" panel-name="suite-Smoke" class="show-methods failed suite-Smoke"> (show)</a> <!-- show-methods failed suite-Smoke -->
+                    </span>
+                    <div class="method-list-content failed suite-Smoke">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke" title="com.selenium.pageobject_test.Calculator_Test" class="method navigator-link" hash-for-method="divOperation">divOperation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke" title="com.selenium.pageobject_test.Calculator_Test" class="method navigator-link" hash-for-method="mulOperation">mulOperation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Smoke -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -109,22 +128,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Smoke" title="com.selenium.pageobject_test.Calculator_Test" class="method navigator-link" hash-for-method="divOperation">divOperation</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Smoke" title="com.selenium.pageobject_test.FixedDeposit_Test" class="method navigator-link" hash-for-method="fd_10000">fd_10000</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Smoke" title="com.selenium.pageobject_test.FixedDeposit_Test" class="method navigator-link" hash-for-method="fd_40000">fd_40000</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Smoke" title="com.selenium.pageobject_test.Calculator_Test" class="method navigator-link" hash-for-method="mulOperation">mulOperation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -144,6 +153,84 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Smoke" class="panel Smoke">
+          <div class="suite-Smoke-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.selenium.pageobject_test.Calculator_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="divOperation">
+                  </a> <!-- divOperation -->
+                  <span class="method-name">divOperation</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=91.0.4472.124)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SAKSOFT099PDC&apos;, ip: &apos;192.168.0.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\SAKSOF~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65306}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6f1328ad3afd0c68f33c060ebefeb7cc
+*** Element info: {Using=css selector, value=h2.ng-binding}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.getText(Unknown Source)
+	at com.selenium.pageobject.TestBase.verifyText(TestBase.java:82)
+	at com.selenium.pageobject_test.Calculator_Test.divOperation(Calculator_Test.java:72)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(verify division operation)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="mulOperation">
+                  </a> <!-- mulOperation -->
+                  <span class="method-name">mulOperation</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=91.0.4472.124)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SAKSOFT099PDC&apos;, ip: &apos;192.168.0.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\SAKSOF~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65306}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6f1328ad3afd0c68f33c060ebefeb7cc
+*** Element info: {Using=css selector, value=input[ng-model=&apos;first&apos;}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.clear(Unknown Source)
+	at com.selenium.pageobject.TestBase.handleTextBox(TestBase.java:64)
+	at com.selenium.pageobject_test.Calculator_Test.mulOperation(Calculator_Test.java:81)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(verify multiplication operation)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Smoke-class-failed -->
           <div class="suite-Smoke-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -157,24 +244,6 @@
                   <span class="method-name">addOperation</span>
                   <em>
 (verify addition operation)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="divOperation">
-                  </a> <!-- divOperation -->
-                  <span class="method-name">divOperation</span>
-                  <em>
-(verify division operation)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="mulOperation">
-                  </a> <!-- mulOperation -->
-                  <span class="method-name">mulOperation</span>
-                  <em>
-(verify multiplication operation)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -217,7 +286,7 @@
         </div> <!-- panel Smoke -->
         <div panel-name="test-xml-Smoke" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\SAKSOFT099\3D Objects\automation-selenium\SuiteFile\testng_pageobject.xml</span>
+            <span class="header-content">C:\Users\SAKSOFT099\3D Objects\selenium-testng\SuiteFile\testng_pageobject.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -312,34 +381,34 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'fd_10000')
-data.setCell(0, 2, 'com.selenium.pageobject_test.FixedDeposit_Test')
-data.setCell(0, 3, 9635);
+data.setCell(0, 1, 'divOperation')
+data.setCell(0, 2, 'com.selenium.pageobject_test.Calculator_Test')
+data.setCell(0, 3, 15661);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'fd_40000')
-data.setCell(1, 2, 'com.selenium.pageobject_test.FixedDeposit_Test')
-data.setCell(1, 3, 4791);
+data.setCell(1, 1, 'mulOperation')
+data.setCell(1, 2, 'com.selenium.pageobject_test.Calculator_Test')
+data.setCell(1, 3, 12215);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'addOperation')
-data.setCell(2, 2, 'com.selenium.pageobject_test.Calculator_Test')
-data.setCell(2, 3, 4575);
+data.setCell(2, 1, 'fd_10000')
+data.setCell(2, 2, 'com.selenium.pageobject_test.FixedDeposit_Test')
+data.setCell(2, 3, 9479);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'divOperation')
-data.setCell(3, 2, 'com.selenium.pageobject_test.Calculator_Test')
-data.setCell(3, 3, 3556);
+data.setCell(3, 1, 'fd_40000')
+data.setCell(3, 2, 'com.selenium.pageobject_test.FixedDeposit_Test')
+data.setCell(3, 3, 6500);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'subOperation')
+data.setCell(4, 1, 'addOperation')
 data.setCell(4, 2, 'com.selenium.pageobject_test.Calculator_Test')
-data.setCell(4, 3, 3465);
+data.setCell(4, 3, 4820);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'mulOperation')
+data.setCell(5, 1, 'subOperation')
 data.setCell(5, 2, 'com.selenium.pageobject_test.Calculator_Test')
-data.setCell(5, 3, 3436);
+data.setCell(5, 3, 3567);
 window.suiteTableData['Smoke']= { tableData: data, tableDiv: 'times-div-Smoke'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 29 seconds</span>
+              <span class="suite-total-time">Total running time: 52 seconds</span>
               <div id="times-div-Smoke">
               </div> <!-- times-div-Smoke -->
             </div> <!-- times-div -->
@@ -351,21 +420,15 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">fd_40000</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Test Case Passed : fd_40000</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
               <span class="reporter-method-name">fd_10000</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Test Case Passed : fd_10000</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">divOperation</span>
+              <span class="reporter-method-name">fd_40000</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Test Case Passed : divOperation</span>
+                <span class="reporter-method-output">Test Case Passed : fd_40000</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -378,12 +441,6 @@ return data;
               <span class="reporter-method-name">addOperation</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Test Case Passed : addOperation</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">mulOperation</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Test Case Passed : mulOperation</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -408,42 +465,46 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">fd_10000</span>
-                <span class="method-start">3268 ms</span>
+                <span class="method-start">5062 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">fd_40000</span>
-                <span class="method-start">13112 ms</span>
+                <span class="method-start">15160 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">postCondition</span>
-                <span class="method-start">18179 ms</span>
+                <span class="method-start">22073 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.selenium.pageobject_test.Calculator_Test</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">preCondition</span>
-                <span class="method-start">19239 ms</span>
+                <span class="method-start">23249 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">addOperation</span>
-                <span class="method-start">21329 ms</span>
+                <span class="method-start">25284 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">subOperation</span>
-                <span class="method-start">26020 ms</span>
+                <span class="method-start">30326 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">divOperation</span>
-                <span class="method-start">29594 ms</span>
+                <span class="method-start">34145 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">mulOperation</span>
-                <span class="method-start">33256 ms</span>
+                <span class="method-start">62051 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">postCondition</span>
-                <span class="method-start">36798 ms</span>
+                <span class="method-start">86470 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

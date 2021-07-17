@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.selenium.pageobject_test.FixedDeposit_DataDriven">
+      <class name="com.selenium.testng.MutualLogin">
         <methods>
           <include name="preCondition"/>
-          <include name="fd_DataDriven"/>
+          <include name="loginSpeed"/>
+          <include name="loginAdmin"/>
           <include name="postCondition"/>
         </methods>
-      </class> <!-- com.selenium.pageobject_test.FixedDeposit_DataDriven -->
+      </class> <!-- com.selenium.testng.MutualLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

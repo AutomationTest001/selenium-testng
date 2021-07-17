@@ -1,8 +1,6 @@
 com\selenium\webobject\Code_For_CountElements_1.class
-com\samplepackage\test\Code2.class
 com\selenium\pageobject_test\FixedDeposit_DataDriven.class
 com\selenium\basictest\automation_selenium\LoginTestAdmin.class
-com\samplepackage\test\Code1.class
 com\selenium\pageobject_test\Calculator_Test.class
 com\selenium\webobject\BrowserCode.class
 com\selenium\webobject\Code_For_MouseHandle_7.class
@@ -25,7 +23,6 @@ com\selenium\basictest\automation_selenium\LoginTestJSmith.class
 com\selenium\testng\css_LinkText.class
 com\selenium\testng\HardAssertCode.class
 com\selenium\webobject\Code_For_Alert_2.class
-com\samplepackage\test\Code3.class
 com\selenium\webobject\Code_For_Screenshot_10.class
 com\selenium\testng\ReadPropertiesFile.class
 com\selenium\testng\CrossBrowserTest_WebDriverManager.class
