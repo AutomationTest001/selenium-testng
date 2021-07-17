@@ -10,10 +10,17 @@ public class TestClass {
   }
   
   @Test
-  public void f() {
+  public void f1() {
 	  
 	  System.out.println("Hello Github !!!!");
   }
+  
+  @Test
+  public void f2() {
+	  
+	  System.out.println("Hello Github !!!!");
+  }
+
  
 
   @AfterTest
